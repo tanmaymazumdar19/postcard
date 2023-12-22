@@ -1,0 +1,16 @@
+{
+  "name": "@postcard/tailwind-config",
+  "version": "0.0.0",
+  "private": true,
+  "license": "MIT",
+  "exports": {
+    ".": "./tailwind.config.ts"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "devDependencies": {
+    "@postcard/typescript-config": "workspace:*",
+    "tailwindcss": "^3.3.5"
+  }
+}

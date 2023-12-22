@@ -1,0 +1,3 @@
+{
+  "extends": "@postcard/typescript-config/base.json"
+}

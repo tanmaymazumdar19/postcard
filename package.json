@@ -1,0 +1,33 @@
+{
+  "name": "postcard-monorepo",
+  "private": true,
+  "repository": "https://github.com/tanmaymazumdar19/postcard",
+  "author": "Tanmay Mazumdar <tanmay.mazumdar@quokkalabs.com>",
+  "license": "MIT",
+  "packageManager": "yarn@4.0.2",
+  "scripts": {
+    "build": "turbo build",
+    "dev": "turbo dev",
+    "web:dev": "turbo dev --filter=web",
+    "lint": "turbo lint",
+    "format": "prettier --write \"**/*.{ts,tsx,md}\""
+  },
+  "devDependencies": {
+    "@postcard/eslint-config": "*",
+    "@postcard/typescript-config": "*",
+    "@svgr/webpack": "^8.1.0",
+    "prettier": "^3.1.0",
+    "turbo": "latest"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "dependencies": {
+    "@nextui-org/react": "^2.2.9",
+    "framer-motion": "^10.16.16"
+  }
+}
